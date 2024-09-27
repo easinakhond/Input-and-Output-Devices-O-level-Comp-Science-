@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input and Output Devices Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        td {
+            transition: background-color 0.3s;
+        }
+        .downloadBtn {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        .downloadBtn:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+            th, td {
+                font-size: 14px;
+            }
+            .downloadBtn {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Input Devices</h2>
+<table id="inputDevicesTable">
+    <thead>
+        <tr>
+            <th>Device</th>
+            <th>What It Does</th>
+            <th>Where It Is Used</th>
+            <th>Why It Is Used</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Barcode Scanner</td><td>Reads barcodes to capture product information.</td><td>Supermarkets, Warehouses, Libraries</td><td>Quickly and accurately retrieves product details for stock and checkout.</td></tr>
+        <tr><td>Digital Camera</td><td>Captures photographs or videos as digital images.</td><td>Photography, Smartphones, Webcams</td><td>High-quality visual content.</td></tr>
+        <tr><td>Keyboard</td><td>Inputs text and commands by pressing keys.</td><td>Computers, Tablets, Laptops</td><td>Type documents, enter data, control software.</td></tr>
+        <tr><td>Microphone</td><td>Captures analogue sound and converts it into digital signals.</td><td>Recording studios, Smartphones, Computers</td><td>Audio recording, voice communication.</td></tr>
+        <tr><td>Optical Mouse</td><td>Moves the cursor on the screen based on hand movement.</td><td>Computers, Laptops</td><td>Precise control and navigation on a computer screen.</td></tr>
+        <tr><td>QR Code Scanner</td><td>Reads QR codes to access stored information.</td><td>Retail shops, Mobile apps</td><td>Quickly retrieves data from QR codes (websites, product info).</td></tr>
+        <tr><td>Touch Screen (Resistive)</td><td>Detects touch by pressing a flexible screen layer.</td><td>ATMs, Older smartphones and tablets</td><td>Direct interaction with the device.</td></tr>
+        <tr><td>Touch Screen (Infra-red)</td><td>Detects touch by interrupting infrared light beams across the screen.</td><td>Kiosks, Large touch displays</td><td>Accurate touch detection, works in various lighting conditions.</td></tr>
+        <tr><td>Touch Screen (Capacitive)</td><td>Detects touch through changes in electrical charge on the screen surface.</td><td>Modern smartphones, Tablets, Touch monitors</td><td>Smooth, responsive touch experience with multi-touch capabilities.</td></tr>
+        <tr><td>Two-Dimensional (2D) Scanner</td><td>Captures flat, 2D images of documents or objects.</td><td>Offices, Libraries, Schools</td><td>Digitizes documents and photos for storage, editing, or sharing.</td></tr>
+        <tr><td>Three-Dimensional (3D) Scanner</td><td>Captures detailed 3D shapes and dimensions of objects.</td><td>Manufacturing, Design, Medical imaging</td><td>Creates digital models of objects for design, analysis, or reproduction.</td></tr>
+    </tbody>
+</table>
+<button class="downloadBtn" onclick="downloadTableAsImage('inputDevicesTable', 'InputDevicesTable.jpg')">Download Input Devices Table as JPG</button>
+
+<h2>Output Devices</h2>
+<table id="outputDevicesTable">
+    <thead>
+        <tr>
+            <th>Name of Device</th>
+            <th>What Does It Do?</th>
+            <th>Where Is It Used?</th>
+            <th>Why Is It Used?</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Actuator</td><td>Converts energy into motion; performs mechanical tasks.</td><td>Making robots, Control valves, Smart home automation</td><td>Essential in any system that requires movement.</td></tr>
+        <tr><td>DLP Projector</td><td>Projects images or videos by shining light through tiny mirrors.</td><td>Cinemas, Classrooms, Large presentations</td><td>High-quality large-screen visuals.</td></tr>
+        <tr><td>Inkjet Printer</td><td>Prints text and images onto paper by spraying tiny droplets of ink.</td><td>Home, Schools, Offices</td><td>Low cost compared to other types of printers.</td></tr>
+        <tr><td>Laser Printer</td><td>Heats toner (a fine powder) onto the paper to create prints.</td><td>Offices, Schools, Home</td><td>High-quality prints, fast print speed.</td></tr>
+        <tr><td>LED Screen</td><td>Displays images and videos using tiny light bulbs called LEDs.</td><td>Televisions, Computers, Smartphones</td><td>High-quality visuals, energy-efficient, thin.</td></tr>
+        <tr><td>LCD Projector</td><td>Projects images or video through a transparent panel illuminated by light.</td><td>Classrooms, Conference halls, Cinemas</td><td>Bright, efficient balance of color and clarity in images.</td></tr>
+        <tr><td>LCD Screen</td><td>Displays images and video using liquid crystals with a backlight.</td><td>Televisions, Computers, Smartphones</td><td>Energy efficient, lightweight.</td></tr>
+        <tr><td>Speaker</td><td>Converts electrical signals into analogue sound waves.</td><td>Radios, Entertainment systems, Smartphones</td><td>Multiple shapes and sizes for different uses.</td></tr>
+        <tr><td>3D Printer</td><td>Adds thin layers of plastic, metal, or other material to form a 3D object.</td><td>Manufacturing, Education, Home</td><td>Creates prototypes, custom parts.</td></tr>
+    </tbody>
+</table>
+<button class="downloadBtn" onclick="downloadTableAsImage('outputDevicesTable', 'OutputDevicesTable.jpg')">Download Output Devices Table as JPG</button>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script>
+    function downloadTableAsImage(tableId, fileName) {
+        html2canvas(document.querySelector("#" + tableId)).then(canvas => {
+            let link = document.createElement('a');
+            link.href = canvas.toDataURL("image/jpeg");
+            link.download = fileName;
+            link.click();
+        });
+    }
+</script>
+
+</body>
+</html>
